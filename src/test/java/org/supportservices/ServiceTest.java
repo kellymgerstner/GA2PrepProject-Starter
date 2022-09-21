@@ -6,50 +6,18 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ServiceTest {
-    private Service service1, service2, service3, service4, service5;
-    @BeforeEach
-    public void createTestServices(){
-        service1 = new Service();
-        service2 = new Service();
-        service3 = new Service("Food Pantry", new Provider("Salvation Army"), new Category("Food Assistance"), new Location("St. Louis"));
-        service4 = new Service("Group Counseling", new Provider("NAMI"), new Category("Mental Health"), new Location("Online"));
-        service5 = new Service("Women's Shelter", new Provider("United Way"), new Category("Housing Assistance"), new Location ("St. Charles"));
-    }
+    //TODO: Create test services to be used in all tests
 
-    @Test
-    public void testSettingServiceId(){
-        assertNotEquals(service1.getId(), service2.getId());
-    }
+    //TODO: Test that services have unique IDs
 
-    @Test
-    public void testConstructorSetsFields(){
-        assertEquals(service3.getName(), "Food Pantry");
-        assertEquals(service3.getProvider().getValue(), "Salvation Army");
-        assertEquals(service3.getCategory().getValue(), "Food Assistance");
-        assertEquals(service3.getLocation().getValue(), "St. Louis");
+    //TODO: Test that fields set correctly
 
-    }
+    //TODO: Test that field types are correct
 
-    @Test
-    public void testConstructorSetsCorrectFieldTypes(){
-        assertTrue(service4.getProvider() instanceof Provider);
-        assertTrue(service4.getCategory() instanceof Category);
-        assertTrue(service4.getLocation() instanceof Location);
-    }
-    @Test
-    public void testForServiceEquality(){
-        assertFalse(service1.equals(service2));
-    }
+    //TODO: Test that the first and last lines of toString are **********
 
-    @Test
-    public void testThatServiceBeginsAndEndsWithNewLine(){
-        assertEquals(service5.toString().charAt(0), service5.toString().charAt(service5.toString().length()-1));
-    }
+    //TODO: Test that toString prints service correctly
 
-    @Test
-    public void testToStringPrintsFields(){
-
-    }
-
+    //TODO: Test that toString responds with "Data not available" when a field is empty
 
 }
