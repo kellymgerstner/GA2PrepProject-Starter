@@ -14,10 +14,10 @@ class ServiceTest {
 
     //TODO: Test that field types are correct
 
-    //TODO: Test that the first and last lines of toString are **********
-
     //TODO: Test that toString prints service correctly
 
     //TODO: Test that toString responds with "Data not available" when a field is empty
+
+    //TODO: Test that the first and last lines of toString are **********
 
 }
